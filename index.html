@@ -30,6 +30,7 @@
         <input
           type="number"
           id="peso"
+          class = "entradadedados"
           placeholder="Digite seu peso"
           required
         />
@@ -38,11 +39,18 @@
         <input
           type="number"
           id="altura"
+          class="entradadedados"
           placeholder="Digite sua altura"
           required
         />
 
-        <button onclick="calcularIMC()">Calcular</button>
+<div id="container-botoes">
+  <button onclick="calcularIMC(event, tipo=1)">Calcular 1</button>
+  <button onclick="calcularIMC(event, tipo=2)">Calcular 2</button>
+  <button onclick="calcularIMC(event, tipo=3)">Calcular 3</button>
+</div>
+
+<h4 id="resultado"></h4>
 
     </main>
 
